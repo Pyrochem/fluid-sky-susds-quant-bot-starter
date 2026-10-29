@@ -2,7 +2,7 @@
 
 An open-source Python monitoring and execution-simulation starter kit for **Fluid Protocol (by Instadapp)** liquidity bots and **Sky (`sUSDS`)** leveraged basis-trade loopers.
 
-> 📡 **Live Proof-of-Concept Feed:** Watch our engine broadcast real-time DeFi quant telemetry every 4 hours on our **[Public Telegram Quant Channel](https://t.me/YOUR_CHANNEL_HANDLE)**.
+> 📡 **Live Proof-of-Concept Feed:** Watch our engine broadcast real-time DeFi quant telemetry every 8 hours on our **[Public Telegram Quant Channel](https://t.me/+QVh6pF4DzIthYmIx)**.
 
 ## The On-Chain Data Bottleneck
 If you build automated strategies on **Fluid** or **Sky (`sUSDS`)**, standard ERC-20/ERC-4626 RPC calls fail in production for two reasons:
@@ -13,10 +13,10 @@ If you build automated strategies on **Fluid** or **Sky (`sUSDS`)**, standard ER
 
 ## Quick Start (Zero Bit-Shifting or RPC Setup Required)
 
-This starter kit uses the **[Stateless DeFi Quant Simulators API on RapidAPI]([YOUR_RAPIDAPI_HUB_URL])** to unpack Fluid's 256-bit storage slots and compute live un-dripped `sUSDS` carry spreads in a single `GET` request.
+This starter kit uses the **[Stateless DeFi Quant Simulators API on RapidAPI](https://rapidapi.com/infio-infio-quant/api/fluid-bigmath-and-sky-susds-quant-simulators)** to unpack Fluid's 256-bit storage slots and compute live un-dripped `sUSDS` carry spreads in a single `GET` request.
 
 ### 1. Grab a Free API Key
-1. Go to the **[DeFi Quant Simulators RapidAPI Hub Page]([YOUR_RAPIDAPI_HUB_URL])**.
+1. Go to the **[DeFi Quant Simulators RapidAPI Hub Page](https://rapidapi.com/infio-infio-quant/api/fluid-bigmath-and-sky-susds-quant-simulators)**.
 2. Subscribe to the **Basic (Free)** tier (`100 requests/month` — no credit card required) or **Pro** for 24/7 bot polling.
 3. Copy your `X-RapidAPI-Key` and `X-RapidAPI-Host`.
 
@@ -40,3 +40,13 @@ Pass any of these verified ERC-20 addresses into `TOKEN_ADDRESS` inside `fluid_s
 | **USDT** | `0xdAC17F958D2ee523a2206206994597C13D831ec7` | Tether borrow rate and supply liquidity monitoring |
 | **sUSDe** | `0x9D39A5DE30e57443BfF2A8307A4256c8797A3497` | Ethena staked USDe collateral loops on Fluid |
 | **cbBTC** | `0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf` | Coinbase Wrapped BTC liquidity and borrow utilization |
+
+---
+
+## 🔗 Full DeFi Quantitative API Suite
+
+Building multi-protocol execution or yield-routing bots? Check out our companion open-source starter kits and stateless `Multicall3` APIs:
+
+1. **[Morpho Blue & Ethena (`sUSDe`) Quant Bot Starter](https://github.com/Pyrochem/morpho-blue-ethena-quant-bot-starter)** — Intra-block `AdaptiveCurveIRM` 90% kink slippage, `10^36` oracle health factors, and Ethena 8-hour linear vesting dilution.
+2. **[Fluid Protocol (`BigMath`) & Sky (`sUSDS`) Quant Bot Starter](https://github.com/Pyrochem/fluid-sky-susds-quant-bot-starter)** — 256-bit `BigMathMinified` storage slot unpacking and un-dripped `sUSDS` (`RAY` $10^{27}$ `rpow`) leveraged carry simulations.
+3. **[Live Telegram Quant Monitor](https://t.me/+QVh6pF4DzIthYmIx)** — Automated 8-hour on-chain telemetry broadcasts powered by our RapidAPI endpoints.
